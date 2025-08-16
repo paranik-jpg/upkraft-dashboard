@@ -1,6 +1,3 @@
-// src/data.js
-
-// Add a unique 'id' for each item for React keys
 export const upcomingLessons = [
     { id: 1, date: '21 July', time: '2:00 - 3:00 PM', course: 'Introduction to Piano', student: 'Eunica Robel & Arnold Hayes' },
     { id: 2, date: '22 July', time: '4:00 - 5:00 PM', course: 'Finger Warmups', student: 'Eunica Robel & Arnold Hayes' },

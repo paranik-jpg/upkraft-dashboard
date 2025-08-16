@@ -1,6 +1,6 @@
 import React from 'react';
 import { FiBell } from 'react-icons/fi';
-import avatar from '../assets/avatar.png'; // Make sure to have an avatar image in src/assets
+import avatar from '../assets/avatar.png';
 
 const Header = () => {
   return (

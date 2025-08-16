@@ -1,7 +1,6 @@
 import React from 'react';
 import { FiUsers, FiAward, FiBookOpen } from 'react-icons/fi';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
-// Make sure you have your images in src/assets/
 import avatar from '../assets/avatar.png';
 import referralImg from '../assets/referral-img.png'; 
 import StatCard from './StatCard';
@@ -11,10 +10,8 @@ import UpcomingLessons from './UpcomingLessons';
 const Dashboard = () => {
   return (
     <main className="flex-1 bg-light-bg p-8">
-      {/* A clean, two-column grid for the entire dashboard */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
-        {/* --- LEFT COLUMN (takes up 2/3 of the space) --- */}
         <div className="lg:col-span-2 flex flex-col gap-8">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
               <StatCard value="30" title="Total Active Students" />
@@ -29,7 +26,6 @@ const Dashboard = () => {
           <UpcomingLessons />
         </div>
 
-        {/* --- RIGHT COLUMN (takes up 1/3 of the space) --- */}
         <div className="flex flex-col gap-8">
           <div className="bg-white p-6 rounded-xl shadow-md border-l-4 border-accent-blue">
             <div className="flex items-center space-x-4">
@@ -46,22 +42,16 @@ const Dashboard = () => {
             </div>
           </div>
           
-          {/* --- Refer and Earn Card --- */}
           <div className="relative text-white p-6 rounded-xl shadow-md flex flex-col items-center text-center bg-primary-purple">
-              {/* Subtle background glow effect */}
               <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-purple-500 to-primary-purple opacity-50"></div>
 
-              {/* The content, kept relative to stay on top of the background */}
               <div className="relative z-10">
                   <div className="bg-white p-4 rounded-full absolute -top-20 left-1/2 -translate-x-1/2 shadow-lg">
                       <img src={referralImg} alt="Refer and Earn" className="w-20 h-20 object-contain" />
                   </div>
-                  <div className="mt-16 pt-2"> {/* Added a little extra padding-top */}
-                      {/* Larger, more prominent title */}
+                  <div className="mt-16 pt-2">
                       <h3 className="text-2xl font-bold">Refer and Earn</h3>
-                      {/* Slightly more transparent description text */}
                       <p className="text-sm my-3 text-white/75">Invite friends and earn exclusive rewards for every successful referral.</p>
-                      {/* Button with a more dynamic hover effect */}
                       <button className="bg-white text-primary-purple font-bold py-3 px-6 rounded-lg mt-3 w-full hover:bg-gray-100 transform hover:scale-105 transition-transform duration-200 ease-in-out" onClick={() => alert('Refer Now button clicked!')}>
                           Refer Now &rarr;
                       </button>
