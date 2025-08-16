@@ -2,9 +2,6 @@
 
 This project is a high-fidelity, responsive frontend implementation of a tutor's dashboard, built from a UI design mockup. It was developed as a comprehensive exercise in modern frontend development practices.
 
-![Upkraft Dashboard Screenshot](<./path-to-your-screenshot.png>)
-*<ins>Note:</ins> To add a screenshot here, take a nice picture of your running application, save it in your project folder (e.g., in the `public` directory), and update the path above.*
-
 ---
 
 ## Features
